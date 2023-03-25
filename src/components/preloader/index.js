@@ -5,7 +5,7 @@ import {selectAuthUser} from "../../app/reducers/authUserReducer";
 
 
 
-export default function Preloader(props){
+export default function Preloader(){
 
     const user = useSelector(selectAuthUser);
 
