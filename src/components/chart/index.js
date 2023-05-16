@@ -25,7 +25,7 @@ export default function Chat(){
                                  className="h-100">
                                 <div className={styles.messages}>
                                     <h3 className="text-center">
-                                        Chat(last 3 messages)
+                                        Chat (last messages)
                                     </h3>
                                     <Index/>
                                 </div>

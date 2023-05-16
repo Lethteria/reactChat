@@ -1,10 +1,13 @@
-import { ADD_MESSAGE,
-        REQUEST_USERS,
-        RECEIVE_USERS,
-        SET_FETCHING_ERROR,
-        RECEIVE_LOGIN_USER,
-        REQUEST_LOGIN_USER,
-        REMOVE_LOGIN_USER
+import {
+    ADD_MESSAGE,
+    REMOVE_MESSAGES,
+    REQUEST_USERS,
+    RECEIVE_USERS,
+    SET_FETCHING_ERROR,
+    REMOVE_USERS,
+    RECEIVE_LOGIN_USER,
+    REQUEST_LOGIN_USER,
+    REMOVE_LOGIN_USER
 } from "./actionTypes";
 
 const addMessage = (user,text) => {
@@ -19,6 +22,10 @@ const addMessage = (user,text) => {
     }
 }
 
+const removeMessages  = () => ({
+    type: REMOVE_MESSAGES
+})
+
 const requestUsers = () => ({
     type: REQUEST_USERS
 })
@@ -31,6 +38,10 @@ const receiveUsers = (users) => ({
 const setFetchingError = (error) => ({
     type: SET_FETCHING_ERROR,
     payload: error
+})
+
+const removeUsers = () => ({
+    type: REMOVE_USERS
 })
 
 const requestLoginUser =() => ({
@@ -49,9 +60,11 @@ const removeLoginUser = () => ({
 
 
 export {addMessage,
+        removeMessages,
         requestUsers,
         receiveUsers,
         setFetchingError,
+        removeUsers,
         receiveLoginUser,
         requestLoginUser,
         removeLoginUser

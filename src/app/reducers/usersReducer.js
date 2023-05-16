@@ -1,6 +1,7 @@
 import { RECEIVE_USERS,
         REQUEST_USERS,
-        SET_FETCHING_ERROR
+        SET_FETCHING_ERROR,
+        REMOVE_USERS
 } from "../actionTypes";
 
 import avatarPath1 from "../../assets/img/avatar1.jpg";
@@ -38,6 +39,10 @@ export default function usersReducer(state = initialState,action){
                             isFetchError: action.payload,
                             loading: false
                            }
+        case REMOVE_USERS:
+            return state = {...state,
+                            data: [...initialState.data]
+                            }
         default:
             return state;
     }

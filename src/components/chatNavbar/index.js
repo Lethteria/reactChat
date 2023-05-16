@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./chatNavbar.module.scss"
 import LoginUserInfo from "../loginUserInfo";
 import {logoutUser} from "../../app/asyncActions";
+import {removeMessages, removeUsers} from "../../app/actions";
 import {useDispatch} from "react-redux";
 
 import Container from 'react-bootstrap/Container';
@@ -14,6 +15,8 @@ export default function ChatNavbar(){
 
     function onClick(){
         dispatch(logoutUser())
+        dispatch(removeMessages())
+        dispatch(removeUsers())
     }
     return (
         <Navbar bg="primary"

@@ -1,4 +1,4 @@
-import {ADD_MESSAGE} from "../actionTypes";
+import {ADD_MESSAGE, REMOVE_MESSAGES} from "../actionTypes";
 import avatarPath1 from "../../assets/img/avatar1.jpg";
 import avatarPath2 from "../../assets/img/avatar2.jpg"
 
@@ -34,6 +34,8 @@ export default function messagesReducer(state=initialState, action){
     switch (action.type) {
         case ADD_MESSAGE:
             return state = state.concat(action.payload)
+        case REMOVE_MESSAGES:
+            return state = [...initialState]
         default:
             return state;
     }
