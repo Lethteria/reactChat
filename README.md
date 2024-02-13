@@ -10,7 +10,7 @@ It is a simple chat with a login page and chat page. This application creates a 
 <li> Validation of registration fields and sending message field
 <li> Loading new users from fake REST API JSONplaceholder 
 
-## Movie Search was built with
+## Chat was built with
 `React`\
 `Redux `\
 `React Router`\
