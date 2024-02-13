@@ -18,7 +18,7 @@ It is a simple chat with a login page and chat page. This application creates a 
 `React Bootstrap`
 
 ## View Demo
-<a href="https://[movie-search-lilac.vercel.app/](https://chat-livid-nu.vercel.app/)">link to Chat</a>
+<a href="https://chat-livid-nu.vercel.app">link to Chat</a>
 
 ## Installation
 **1.** You can download this repository by clicking `Code` at the top, then selecting `Download ZIP` or if you want to clone this repository you can do this by
